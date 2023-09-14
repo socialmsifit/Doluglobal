@@ -1,0 +1,624 @@
+*,*::after, *::before{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-color:#FECA00;
+    --secondary-color:#010101;
+    --auxillary-color:#989898;
+    --supplementary-color:#ffffff;
+    --bar-width:100%;
+    --alt-background:url(nathan-waters-j7q-Z9DV3zw-unsplash.jpg) no-repeat center center/cover ;
+}
+@font-face{
+   font-family:'typographica';
+   src:url(typogrgahica/TypoGraphica_demo.otf);
+}
+@font-face {
+   font-family: 'montserrat';
+   src: url(Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+html{
+   scroll-behavior: smooth;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    position: relative;
+}
+main{
+   height: 100vh;
+   width: 100%;
+
+}
+
+header div img{
+   width:100px;
+}
+.mobile-nav-toggle, .sr-only{
+   display: none;
+}
+
+header{
+  background: rgb(246, 241, 241);
+   margin:0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    cursor:pointer;
+    padding-bottom: 0;
+}
+nav{
+   display: flex;
+   justify-content:space-around;
+   align-items:center;
+}
+
+nav ul{
+   flex-direction:row;
+   align-items:center;
+   justify-content:center;
+}
+nav li{
+   list-style: none;
+   display: inline-block;
+   margin-inline-end: 1rem;
+   transition:250ms;
+}
+
+nav li a{
+   text-decoration: none;
+   text-transform:uppercase;
+   color: var(--secondary-color);
+   font-size: .8rem;
+   font-weight:800;
+   font-family: 'montserrat';
+   transition: 250ms;
+}
+
+nav li a:hover{
+   scale:1.5;
+   color:var(--main-color);
+}
+
+.cta{
+   padding:.7rem 1rem;
+   border: none;
+   background: var(--secondary-color);
+   border-radius: 30px;
+   margin-inline-end: .2rem;
+   margin-top:auto;
+   margin-bottom:auto;
+}
+.cta a{
+   text-decoration: none;
+   color:var(--supplementary-color);
+   font-size: .8rem;
+   font-family: 'montserrat';
+}
+
+
+.main-display{
+   background:var(--main-color);
+}
+
+.Dolu-rider-head{
+  background:var(--supplementary-color);
+  padding-bottom:1rem;
+  
+}
+
+.Dolu-rider-head section{
+   display: flex;
+   gap:9rem;
+   flex-direction:row-reverse !important;
+   justify-content:space-around;
+  position: relative;
+
+}
+
+.position-right{
+   width:100%;
+   padding-top:3.8rem;
+   margin-left:2rem;
+}
+
+
+.Dolu-rider-images img{
+   width: 90%;
+   aspect-ratio:1;
+   border-bottom-left-radius:30%;
+}
+
+.Dolu-rider-head h1{
+   font-weight: 400;
+   font-size: 2.9rem;
+   font-family: 'montserrat';
+}
+
+.Dolu-rider-head span{
+   font-weight: 800;
+}
+
+.Dolu-rider-head p{
+   font-size: .75rem;
+   margin-left:.65rem;
+   padding-top:1.5rem;
+   padding-bottom:1rem;
+   font-family: 'typographica';
+}
+
+.Dolu-rider-head ul{
+   margin-top: .5rem;
+   margin-bottom: .8rem;
+   display: flex;
+   justify-content: flex-start;
+   gap: 1.5rem;
+   padding-bottom:2rem;
+}
+
+.Dolu-rider-head li{
+   list-style: none;
+}
+
+.Dolu-rider{
+  padding-top:2.3rem;
+} 
+
+.Dolu-rider-head li a{
+   text-decoration: none;
+   font-size: .75rem;
+   color: var(--supplementary-color);
+   background: var(--secondary-color);
+   padding: 3px 8px;
+   border-radius: 50px;
+   box-shadow:0 3px 10px rgb(0  0  0/ 1.0);
+   font-family: 'montserrat';
+}
+
+.list1{
+   background: transparent !important;
+   color: var(--secondary-color) !important;
+   border: 2px solid var(--secondary-color);
+   box-shadow: none !important;
+}
+
+.cta{
+   padding:.7rem 1rem;
+   border: none;
+   background: var(--secondary-color);
+   border-radius: 30px;
+   margin-inline-end: 1rem;
+}
+.cta a{
+   text-decoration: none;
+   color:var(--supplementary-color);
+   font-size: .71rem;
+   font-family: 'montserrat';
+}
+
+.Dolu-rider-head section{
+   flex-direction:column;
+}
+
+.Dolu-rider-images img{
+   width: 90%;
+   border-bottom-left-radius:30%;
+}
+
+.deets{
+   background: rgb(246, 241, 241);
+   padding-top:2rem;
+   padding-bottom:1.5rem;
+}
+.About-dolu{
+   display:flex;
+   justify-content:space-around;
+   gap:1rem;
+   margin-left:auto;
+   margin-right:auto;
+   padding-left: 1rem;
+   padding-right: 1rem;
+}
+
+.About-dolu img{
+   border-bottom-left-radius:30%;
+}
+
+#about-section{
+   margin-bottom:.6rem;
+}
+
+#about-section h3{
+ margin-bottom:.85rem;
+ padding-left:.4rem;
+ padding-bottom:.3rem;
+ padding-top:.3rem;
+border-left:2px solid var(--main-color);
+font-family: 'typographica';
+}
+
+#about-section p, #projects-section p{
+   margin-bottom:.8rem;
+   margin-top:1rem;
+   font-family: 'montserrat';
+   font-weight:500;
+   font-size: .8rem;
+}
+
+#about-section button, #projects-section button{
+   padding:.3rem 1rem;
+   border:none;
+   text-decoration: none;
+   font-size: .7rem;
+   color: var(--main-color);
+   background: var(--secondary-color);
+   border-radius: 50px;
+   font-family:'montserrat'; 
+}
+
+#projects-section{
+   margin-top:1rem;
+}
+
+#projects-section h3{
+   margin-bottom:.85rem;
+   padding-left:.4rem;
+   padding-bottom:.3rem;
+   padding-top:.3rem;
+  border-left:2px solid var(--main-color);
+  font-family: 'typographica';
+}
+
+#projects-section button a, #about-section button a{
+   text-decoration: none;
+   color: var(--main-color);
+   cursor:pointer;
+}
+
+.our-work{
+   width:80%;
+   margin-top:2rem;
+   margin-right:auto;
+   margin-left:auto;
+ }
+
+.our-work p{
+   padding-top:2rem;
+   margin-bottom: 1.5rem;
+   text-align:center;
+   font-family: 'typographica'; 
+  font-size:1.5rem;
+}
+
+
+.what-we-do{
+   display:flex;
+}
+.our-work figure{
+   margin-bottom:2rem; 
+   padding-bottom: 1rem;
+}
+
+.our-work img{
+   border-radius: 15px;
+   width: 95%;
+   text-align: center;
+}
+
+.our-work figcaption{
+   margin-left:.5rem;
+   margin-bottom: .36rem;
+   margin-top:.3rem;
+   display: inline-block;
+   font-size:.9rem;
+   font-family: 'typographica';
+   font-weight:600;
+   text-transform:uppercase;
+   color:var(--secondary-color);
+   border-left: .5px solid var(--main-color);
+   padding:.2rem .1rem .2rem .4rem; 
+}
+
+.our-work h5{
+   margin-left:.5rem;
+   margin-bottom:1rem;
+   margin-top:.3rem;
+   font-family:'montserrat';
+   font-weight:500;
+   font-size:.65rem;
+}
+
+.our-work button{
+   display: block;
+   border: none;
+   border-radius: 4px;
+   color: var(--main-color);
+   background: var(--secondary-color);
+   font-family:'montserrat';
+   font-size: .6rem;
+   font-weight: 500;
+   margin-left: .5rem;
+   padding: .35rem .65rem;
+}
+
+footer{
+   background: var(--main-color);
+   padding-top:1.5rem;
+   padding-bottom:1.5rem;
+}
+
+.footer{
+   display:flex;
+   gap:1rem;
+   justify-content:space-around;
+   align-items:center;
+   font-family:'montserrat';
+   padding-bottom:3rem;
+   padding-left: .3rem;
+   padding-right: .3rem;
+   border-bottom:.001rem solid var(--secondary-color);
+}
+
+.footer p{
+   padding-bottom:1rem;
+   font-size:1.3rem;
+   text-align: center;
+}
+.footer h6{
+   line-height:1.5rem;
+   font-size:.8rem;
+}
+
+.image-section{
+   text-align:center;
+   padding-top:1.5rem;
+   padding-bottom: 1rem;
+   margin-bottom:.6rem;
+}
+.image-section a{
+   text-decoration:none;
+   color:var(--secondary-color); 
+   margin-right:.6rem;
+   font-family:'montserrat';
+   font-size:.75rem;
+   font-weight:600;
+}
+
+.footer-images{
+ text-align: center;
+}
+.footer-images img{
+   width:15px;
+   gap: .6rem;
+}
+
+.copyright{
+   font-family: 'montserrat';
+   font-size: .9rem;
+   font-weight: 600;
+}
+
+
+ 
+/* styling for mobile first screen */
+
+ @media screen and (max-width:600px){
+
+   header div img{
+      width:50px;
+   }
+   
+   nav{
+      position:fixed;
+      z-index:1000;
+      display:flex;
+      flex-direction:column;
+      align-items: center;
+      justify-content: space-around;
+      inset:0 0 0 20%;
+      padding:min(30vh, 10rem) 2rem ;
+      background:hsl(0 0% 50%/0.2 ) !important;
+      backdrop-filter: blur(.7rem);
+      color: var(--supplementary-color);
+      transform:translateX(100%);
+      transition: transform 350ms ease-out;
+   }
+  
+  
+   nav li{
+      list-style:none;
+      padding-bottom: .5rem;
+      cursor: pointer;
+      padding-top:1rem;
+      margin-bottom:0;
+      margin-top:1rem;
+      margin-left:auto;
+      margin-right:auto;
+      display: flex;
+      flex-direction: column;
+   }
+  
+   nav li a{
+      text-decoration:none;
+      color:var(--supplementary-color);
+      font-size: 1rem;
+      font-weight:700;
+      font-family: 'montserrat';
+      text-transform: uppercase;
+      text-align:center;
+      padding:5px;
+      display:block;
+   }
+  
+   .sr-only{
+      display:none;
+  }
+   .mobile-nav-toggle{
+      position: absolute !important;
+      background: url(bars-solid\ \(3\).svg);
+      background-repeat: no-repeat;
+      background-color: transparent;
+      border: none;
+      width: 1.2rem;
+      aspect-ratio: 1;
+      top:1.2rem;
+      right:2rem;
+      z-index:9999;
+      cursor: pointer;
+      display: block;
+   }
+  
+   .mobile-nav-toggle[aria-extended='true']{
+      background: url(xmark-solid.svg);
+   }
+   nav.active{
+      transform:translateX(0%)
+   }
+   .cta{
+      padding:.7rem 1rem;
+      border: none;
+      background: var(--secondary-color);
+      border-radius: 30px;
+      margin-inline-end: .71rem;
+   }
+
+   .rider{
+      margin-bottom: 0;;
+   }
+   
+   .Dolu-rider-head section{
+      display: flex;
+      flex-direction:column !important;
+      gap:.3rem;   
+   }
+   .Dolu-rider-images img{
+      width: auto;
+    aspect-ratio: 1;
+      border-bottom-left-radius:0%;
+   }
+
+   .Dolu-rider-head{
+      flex-direction: column;
+      position:relative;
+   }
+
+   .position-right{
+      text-align:left;
+      padding-top:0;
+   margin-left:.2rem;
+   }
+
+   .position-right p{
+      width: 80%;
+   }
+
+   .Dolu-rider-head h1{
+      font-size: 1.4rem;
+   }
+
+   .Dolu-rider-head span{
+      font-size: 2.5rem;
+   }
+
+   #about-section{
+      flex-direction: column;
+   }
+   .About-dolu{
+      gap:0;
+      margin-left:.5rem;
+      margin-right:0rem;
+   }
+   .About-dolu img{
+      display: none;
+   }
+   .details{
+      margin-left:.65rem;
+   }
+   #about-section h3, #projects-section h3, .our-work{
+      font-size: .75rem;
+   }
+
+   #about-section p, #projects-section p{
+      font-size:.70rem;
+      font-weight:500;
+      font-family:'montserrat';
+      padding-bottom:.8rem;
+   }  
+  
+.what-we-do{
+   display:flex;
+   flex-direction:column;
+}
+
+.our-work{
+   width:100%;
+}
+
+   .our-work p{
+      padding:.2rem .4rem .2rem .4rem;
+      margin-top:.7rem;
+      margin-bottom: 1.5rem;
+      border-left:2px solid var(--main-color);
+      font-size:.70rem;
+      text-align:left;
+   }
+   .our-work figcaption{
+      margin-top:.7rem;
+   }
+
+   .our-work figure{
+      margin-bottom:2rem;
+      position:relative;  
+   }
+
+   .footer{
+      flex-direction:column;
+      gap:3rem;
+      padding-bottom:6rem;
+   }
+
+   .footer p{
+      font-weight:700;
+      text-align:center;
+      font-size:1rem;
+   }
+
+   .footer h6{
+      font-weight:500;
+      line-height:1.5rem;
+      font-size:.6rem;
+   }
+   .foot2 span{
+      display:block;
+      text-align:center;
+   }
+   
+ }
+
+/* styling for larger screens >600px */
+ @media screen and (max-width: 850px){
+
+
+   .About-dolu{
+      width:80%;
+      margin-left: auto;
+      margin-right: auto;
+   }
+   .About-dolu img{
+      display: none;
+   }
+
+   .footer h6{
+      line-height:1.5rem;
+      font-size:.65rem;
+   }
+   
+}
+
